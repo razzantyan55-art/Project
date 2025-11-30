@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Feater Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Kalam Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">My Skill</a>
+      <a href="#portfolio">My Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+      <h6>Hello I'm</h6>
+      <h1>Razzan</h1>
+
+      <div class="container-cv">
+        <a href="">
+          <div class="CV">
+            <h4>Download CV</h4>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <img src="assets/img/my-photo.png" alt="" />
+        <div class="about-me">
+          <h1>About Me</h1>
+          <p>
+            Hello! My name is Muhammad Razzan Augustyansyah, and I am someone
+            who is always eager to learn new things and grow both personally and
+            professionally. I enjoy exploring new experiences, working with
+            others, and facing challenges that help me become better every day.
+          </p>
+        </div>
+      </section>
+      <section id="skills">
+        <h1>My Skills</h1>
+        <div class="skill">
+          <img src="assets/icons/HTML5.svg" alt="HTML" />
+          <img src="assets/icons/CSS3.svg" alt="CSS" />
+          <img src="assets/icons/JavaScript.svg" alt="JavaScript" />
+          <img src="https://devicon-website.vercel.app/api/figma/original.svg"alt="Figma" />
+          <img src="https://devicon-website.vercel.app/api/python/original.svg"alt="python"/>
+          <img src="https://devicon-website.vercel.app/api/typescript/original.svg" alt="typescript"/>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="projects">
+          <img src="assets/img/poster.png" alt="poster" />
+          <div class="project">
+            <h1>My Project</h1>
+            <p>
+              Tugas bu Miranda, membuat poster anti bullying dengan Adobe
+              Illustrator
+            </p>
+          </div>
+        </div>
+        <div class="view-btn">
+          <h4>See Project</h4>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-container">
+          <div class="contact-title">
+            <h1>Contact</h1>
+          </div>
+          <form  action="https://formspree.io/f/mbjwjaq" method="">
+            <div class="email">
+              <label for="email">Email:</label><br />
+              <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="msg">
+              <label for="message">Message:</label><br />
+              <textarea name="message" id="message"></textarea>
+            </div>
+
+            <div class="submit">
+                <label for="submit"></label>
+                <button type="submit" class="btn-submit">Send</button>
+            </div>
+
+            <input type="hidden" class="format" value="plain" >
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="https://www.whatsapp.com/?lang=id" target="_blank">
+          <img src="assets/icons/whatsapp.svg" alt="" />
+        </a>
+        <a href="https://github.com/razzantyan55-art">
+          <img src="assets/icons/github.svg" alt="Github" />
+        </a>
+        <a href="https://web.telegram.org/a/#-4811225542">
+          <img src="assets/icons/telegram.svg" alt="Telegram" />
+        </a>
+      </div>
+      <p>©2025 Muhammad Razzan All Rights Reserved</p>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
