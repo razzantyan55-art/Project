@@ -265,9 +265,14 @@ header h1 {
 }
 
 /* CONTACT */
+
+.contact-container {
+  justify-items: center;
+}
+
 input,
 textarea {
-  width: 100%;
+  width: 600px;
   padding: 14px;
   margin-top: 8px;
   margin-bottom: 20px;
@@ -277,6 +282,8 @@ textarea {
   background: #0d152f;
   color: #e0e8ff;
   box-shadow: inset 0 0 10px #001a3a;
+  max-width: 600px;
+  
 }
 
 textarea {
@@ -693,6 +700,7 @@ footer p {
   .contact-container {
     max-width: 420px;
     margin: auto;
+
   }
 
   input,
