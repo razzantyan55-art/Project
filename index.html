@@ -14,14 +14,48 @@
       href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+      <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
     <nav>
-      <a href="#">Home</a>
+      
+<!-- Checkbox untuk toggle menu -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Hamburger Button -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Menu -->
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="#" class="menu-link">Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="#about" class="menu-link">About Me</a>
+            </li>
+            <li class="menu-item">
+              <a href="#skills" class="menu-link">My Skill</a>
+            </li>
+            <li class="menu-item">
+                <a href="#portfolio" class="menu-link">My Project</a>
+            </li>
+            <li class="menu-item">
+                <a href="#contact" class="menu-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+```
+      <!-- <a href="#">Home</a>
       <a href="#about">About Me</a>
       <a href="#skills">My Skill</a>
       <a href="#portfolio">My Portfolio</a>
-      <a href="#contact">Contact</a>
+      <a href="#contact">Contact</a> -->
     </nav>
 
     <header>
@@ -29,7 +63,7 @@
       <h1>Razzan</h1>
 
       <div class="container-cv">
-        <a href="">
+        <a href="/my-portfolio/assets/img/WhatsApp Image 2025-12-07 at 15.25.19.jpeg" download="CV Muhammad Razzan Augustyansyah.jpeg">
           <div class="CV">
             <h4>Download CV</h4>
           </div>
@@ -39,7 +73,6 @@
 
     <main>
       <section id="about">
-        <img src="assets/img/my-photo.png" alt="" />
         <div class="about-me">
           <h1>About Me</h1>
           <p>
@@ -49,6 +82,7 @@
             others, and facing challenges that help me become better every day.
           </p>
         </div>
+        <img src="assets/img/my-photo.png" alt="" />
       </section>
       <section id="skills">
         <h1>My Skills</h1>
@@ -56,9 +90,18 @@
           <img src="assets/icons/HTML5.svg" alt="HTML" />
           <img src="assets/icons/CSS3.svg" alt="CSS" />
           <img src="assets/icons/JavaScript.svg" alt="JavaScript" />
-          <img src="https://devicon-website.vercel.app/api/figma/original.svg"alt="Figma" />
-          <img src="https://devicon-website.vercel.app/api/python/original.svg"alt="python"/>
-          <img src="https://devicon-website.vercel.app/api/typescript/original.svg" alt="typescript"/>
+          <img
+            src="https://devicon-website.vercel.app/api/figma/original.svg"
+            alt="Figma"
+          />
+          <img
+            src="https://devicon-website.vercel.app/api/python/original.svg"
+            alt="python"
+          />
+          <img
+            src="https://devicon-website.vercel.app/api/typescript/original.svg"
+            alt="typescript"
+          />
         </div>
       </section>
       <section id="portfolio">
@@ -82,23 +125,23 @@
           <div class="contact-title">
             <h1>Contact</h1>
           </div>
-          <form  action="https://formspree.io/f/mbjwjaq" method="">
-            <div class="email">
-              <label for="email">Email:</label><br />
-              <input type="email" name="email" id="email" />
-            </div>
-
-            <div class="msg">
-              <label for="message">Message:</label><br />
-              <textarea name="message" id="message"></textarea>
-            </div>
+          <form action="https://formspree.io/f/mrbjwjaq" method="POST">
+            
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your Name" />
+            
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Your Email" />
+            
+            <label>Message</label>
+            <textarea name="message" placeholder="Write your message..."></textarea>
 
             <div class="submit">
-                <label for="submit"></label>
-                <button type="submit" class="btn-submit">Send</button>
+              <label for="submit"></label>
+              <button type="submit" class="btn-submit">Send</button>
             </div>
 
-            <input type="hidden" class="format" value="plain" >
+            <input type="hidden" class="format" value="plain" />
           </form>
         </div>
       </section>
@@ -122,5 +165,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="/script.js"></script>
   </body>
 </html>
