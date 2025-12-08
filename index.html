@@ -112,26 +112,26 @@
           <div class="contact-title">
             <h1>Contact</h1>
           </div>
-          <form  action="https://formspree.io/f/mbjwjaq" method="post">
+          <form  action="https://formspree.io/f/mrbjwjaq" method="POST"> 
             <div class="email">
-              <label for="email">Email:</label><br />
-              <input type="email" name="email" id="email" />
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required />
             </div>
             
             <div class="Nama">
-              <label for="name">Nama:</label><br />
-              <textarea name="name" id="name"></textarea>
+              <label for="name">Nama:</label>
+              <textarea name="name" id="name" required ></textarea>
             </div>
 
             <div class="msg">
-              <label for="message">Message:</label><br />
-              <textarea name="message" id="message"></textarea>
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" required>
+              </textarea>
             </div>
-
 
             <div class="submit">
                 <label for="submit"></label>
-                <button type="submit" class="btn-submit">Send</button>
+                <button type="submit" class="btn-submit" id="submit">Send</button>
             </div>
 
             <input type="hidden" class="format" value="plain" >
